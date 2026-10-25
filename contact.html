@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lab4Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <header>
+        <p class="eyebrow">PRAKTIKUM PEMROGRAMAN WEB</p>
+        <h1>Contact</h1>
+        <p class="subtitle">Formulir kontak sederhana menggunakan HTML.</p>
+    </header>
+    <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <main class="page-content">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Hubungi Saya</h2>
+        <p>Silakan isi formulir di bawah ini sebagai contoh form kontak. Form ini hanya demonstrasi tampilan dan belum mengirim data ke server.</p>
+        <form class="contact-form" action="#" method="post" onsubmit="alert('Form ini hanya demonstrasi praktikum dan belum terhubung ke server.'); return false;">
+            <div class="form-group">
+                <label for="nama">Nama lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Alamat email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subjek">Subjek</label>
+                <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan" required>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..." required></textarea>
+            </div>
+            <button class="btn" type="submit" style="border:0; cursor:pointer;">Kirim Pesan</button>
+            <p class="form-help" style="margin-top:10px;">Catatan: tombol hanya menampilkan pemberitahuan karena belum ada backend.</p>
+        </form>
+    </main>
+    <footer>
+        <p>© 2026 Muhammad Hanif Ramadhani · Lab4Web</p>
+        <a href="#container">Kembali ke atas ↑</a>
+    </footer>
+</div>
+</body>
+</html>

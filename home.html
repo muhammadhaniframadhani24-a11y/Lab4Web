@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4Web - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <header>
+        <p class="eyebrow">PRAKTIKUM PEMROGRAMAN WEB</p>
+        <h1>Layout Sederhana</h1>
+        <p class="subtitle">Belajar membangun halaman web menggunakan HTML semantik dan CSS Layout.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="hero">
+        <div>
+            <p class="eyebrow">WELCOME TO LAB4WEB</p>
+            <h2>Hello, World!</h2>
+            <p>Website sederhana ini dibuat sebagai latihan penggunaan box element, CSS float, clearfix, dan elemen semantik HTML5.</p>
+            <a href="about.html" class="btn btn-large">Kenali Saya <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+            <div class="art-window">
+                <span></span><span></span><span></span>
+                <div class="art-line long"></div>
+                <div class="art-line"></div>
+                <div class="art-card"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="wrapper">
+        <main id="main">
+            <section class="section-heading">
+                <p class="eyebrow">KONTEN UTAMA</p>
+                <h2>Yang Dipelajari</h2>
+                <p>Beberapa konsep dasar yang diterapkan dalam latihan ini.</p>
+            </section>
+
+            <div class="row">
+                <article class="box">
+                    <div class="feature-icon icon-blue">01</div>
+                    <h3>Box Element</h3>
+                    <p>Memahami content, padding, border, dan margin sebagai bagian dari model kotak CSS.</p>
+                    <a href="box.html" class="text-link">Lihat latihan →</a>
+                </article>
+                <article class="box">
+                    <div class="feature-icon icon-purple">02</div>
+                    <h3>CSS Float</h3>
+                    <p>Mengatur elemen agar berada berdampingan dengan properti float dan clear.</p>
+                    <a href="box.html" class="text-link">Lihat latihan →</a>
+                </article>
+                <article class="box">
+                    <div class="feature-icon icon-green">03</div>
+                    <h3>HTML Semantik</h3>
+                    <p>Menyusun halaman dengan header, nav, main, section, article, aside, dan footer.</p>
+                    <a href="about.html" class="text-link">Selengkapnya →</a>
+                </article>
+            </div>
+
+            <hr class="divider">
+
+            <article class="entry">
+                <div class="entry-image">CSS</div>
+                <div>
+                    <h2>Membuat Layout yang Terstruktur</h2>
+                    <p>Layout membantu menempatkan navigasi, konten, sidebar, dan footer agar halaman mudah dibaca. Struktur yang jelas juga memudahkan pengembangan dan perawatan kode.</p>
+                </div>
+            </article>
+            <hr class="divider">
+            <article class="entry">
+                <div class="entry-image entry-image-alt">HTML</div>
+                <div>
+                    <h2>Menggunakan Elemen Semantik</h2>
+                    <p>Elemen semantik memberikan makna pada bagian halaman. Dengan struktur yang tepat, kode lebih mudah dipahami oleh pengembang maupun perangkat lunak yang membaca dokumen.</p>
+                </div>
+            </article>
+        </main>
+
+        <aside id="sidebar">
+            <div class="widget-box">
+                <h3 class="widget-title">Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="home.html">Halaman Home</a></li>
+                    <li><a href="about.html">Tentang Saya</a></li>
+                    <li><a href="contact.html">Hubungi Saya</a></li>
+                    <li><a href="box.html">Latihan Box Element</a></li>
+                </ul>
+            </div>
+            <div class="widget-box">
+                <h3 class="widget-title">Identitas Mahasiswa</h3>
+                <div class="student-info">
+                    <p><span>Nama</span><strong>Muhammad Hanif Ramadhani</strong></p>
+                    <p><span>NIM</span><strong>312510291</strong></p>
+                    <p><span>Tugas</span><strong>Praktikum 4 - CSS Layout</strong></p>
+                </div>
+            </div>
+            <div class="note-box">
+                <strong>Catatan</strong>
+                <p>Halaman ini merupakan hasil latihan HTML dan CSS untuk Praktikum 4.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2026 Muhammad Hanif Ramadhani · Lab4Web</p>
+        <a href="#container">Kembali ke atas ↑</a>
+    </footer>
+</div>
+</body>
+</html>
